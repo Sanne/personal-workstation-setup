@@ -5,3 +5,8 @@ trying to automate my own workstation setup.
 These are my own scripts, meant to setup my environment as I like it.
 Feel free to check, reuse and adapt but at your own risk.
 
+Now install Ansible, then run the Ansible playbook like this:
+
+	ansible-playbook -i hosts site.yml
+
+
