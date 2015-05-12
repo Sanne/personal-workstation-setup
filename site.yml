@@ -1,0 +1,11 @@
+---
+# Local workstation management (experiments)
+
+- hosts: beast
+  remote_user: root
+  sudo: no
+
+  roles:
+    - cassandra
+    - couchdb
+    - mariadb

@@ -1,0 +1,8 @@
+---
+# Install CouchDB (Avoiding Docker because of issues)
+- name: Get the the latest version of CouchDB
+  yum: name=couchdb state=latest
+
+- name: Start CouchDB
+  service: name=couchdb enabled=yes state=started
+
