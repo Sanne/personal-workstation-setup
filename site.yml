@@ -9,3 +9,4 @@
     - cassandra
     - couchdb
     - mariadb
+    - postgres-server
