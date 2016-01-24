@@ -10,3 +10,4 @@
     - couchdb
     - mariadb
     - postgres-server
+    - redis-server
