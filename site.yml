@@ -3,7 +3,6 @@
 
 - hosts: beast
   remote_user: root
-  sudo: no
 
   roles:
     - cassandra
