@@ -5,7 +5,9 @@ trying to automate my own workstation setup.
 These are my own scripts, meant to setup my environment as I like it.
 Feel free to check, reuse and adapt but at your own risk.
 
-Now install Ansible; on Fedora 23 that is done as:
+Last tested on Fedora 24 Workstation Edition
+
+Now install Ansible; on Fedora 24 that is done as:
 
 	sudo dnf install ansible libselinux-python python-dnf
 
