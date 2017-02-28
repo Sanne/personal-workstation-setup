@@ -1,5 +1,5 @@
 ---
-# Install Cassandra (Avoiding Docker for now due to stability issues)
+# Install Cassandra
 - name: Configure Datastax repo
   copy: src=datastax.repo dest=/etc/yum.repos.d/ owner=root group=root mode=0644
 

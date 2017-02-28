@@ -1,5 +1,5 @@
 ---
-# Install CouchDB (Avoiding Docker because of issues)
+# Install CouchDB
 - name: Get the the latest version of CouchDB
   dnf: name=couchdb state=latest
 
