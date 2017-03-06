@@ -25,3 +25,13 @@
    - mc
    - redshift-gtk
    - redshift
+
+- name: Configure HipChat repo
+  copy: src=hipchat.repo dest=/etc/yum.repos.d/ owner=root group=root mode=0644
+  tags:
+    - hipchat
+
+- name: Install HipChat
+  dnf: name=hipchat4 enablerepo=hipchat state=latest
+  tags:
+    - hipchat
