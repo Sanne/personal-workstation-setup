@@ -11,3 +11,4 @@
     - postgres-server
     - redis-server
     - favourite-tools
+    - network
