@@ -23,8 +23,7 @@
    - perf
    - powertop
    - mc
-   - redshift-gtk
-   - redshift
+   - the_silver_searcher
 
 - name: Configure HipChat repo
   copy: src=hipchat.repo dest=/etc/yum.repos.d/ owner=root group=root mode=0644
