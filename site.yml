@@ -1,14 +1,11 @@
 ---
 # Local workstation management (experiments)
 
-- hosts: beast
-  remote_user: root
+- hosts: venti
+  connection: local
+  become: yes
 
   roles:
-    - cassandra
-    - couchdb
-    - mariadb
-    - postgres-server
-    - redis-server
     - favourite-tools
     - network
+    - infinispan-dev

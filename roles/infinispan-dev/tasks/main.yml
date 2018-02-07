@@ -1,0 +1,50 @@
+---
+- name: install tuned via dnf
+  dnf: name=tuned state=latest
+  tags:
+    - tuned
+
+- name: start tuned
+  service: name=tuned state=started enabled=yes
+  tags:
+    - tuned
+
+- name: Enable TCP fast-open
+  sysctl:
+    name: net.ipv4.tcp_fastopen
+    value: 3
+    state: present
+  tags:
+    - tcp-tcp_fastopen
+
+- pam_limits:
+    domain: sanne
+    limit_type: soft
+    limit_item: nofile
+    value: 16384
+  tags:
+   - ulimits
+
+- pam_limits:
+    domain: sanne
+    limit_type: hard
+    limit_item: nofile
+    value: 16384
+  tags:
+   - ulimits
+
+- pam_limits:
+    domain: sanne
+    limit_type: soft
+    limit_item: nproc
+    value: 16384
+  tags:
+   - ulimits
+
+- pam_limits:
+    domain: sanne
+    limit_type: hard
+    limit_item: nproc
+    value: 16384
+  tags:
+   - ulimits
