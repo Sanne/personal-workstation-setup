@@ -33,3 +33,11 @@
    - docker
    - powertop
    - eclipse
+
+- name: Sysctl tuning for IntelliJ
+  sysctl:
+    name: fs.inotify.max_user_watches
+    value: 524288
+    state: present
+  tags:
+    - intellij
